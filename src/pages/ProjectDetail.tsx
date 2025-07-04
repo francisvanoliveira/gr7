@@ -2,6 +2,8 @@ import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { 
   ArrowLeft, 
   Code, 
@@ -124,7 +126,9 @@ const ProjectDetail = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
+      <Navbar />
+      
+      {/* Breadcrumb */}
       <div className="container mx-auto px-6 py-6">
         <Link to="/" className="inline-flex items-center text-primary hover:text-primary-hover transition-colors">
           <ArrowLeft className="h-4 w-4 mr-2" />
@@ -344,6 +348,7 @@ const ProjectDetail = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
