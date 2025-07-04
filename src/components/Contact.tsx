@@ -112,7 +112,7 @@ const Contact = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="w-full lg:w-auto border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 ml-0 lg:ml-4"
+                  className="w-full lg:w-auto border-primary-foreground/30 text-[#101A35] hover:bg-primary-foreground/10 ml-0 lg:ml-4 hover:text-white hover:border-white"
                 >
                   WhatsApp
                   <MessageCircle className="ml-2 h-5 w-5" />
