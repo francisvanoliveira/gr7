@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { 
   ArrowLeft, 
+  Image as ImageIcon, // Renomeado para evitar conflito com a tag <img>
   Monitor, 
   Shield, 
   Network, 
@@ -176,16 +177,6 @@ const ServiceDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      
-      {/* Breadcrumb */}
-      <div className="container mx-auto px-6 py-6">
-        <Link to="/" className="inline-flex items-center text-primary hover:text-primary-hover transition-colors">
-          <ArrowLeft className="h-4 w-4 mr-2" />
-          Voltar ao início
-        </Link>
-      </div>
-
-      {/* Hero Section */}
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-6 text-center">
           <div className="w-24 h-24 bg-gradient-primary rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-elegant">
@@ -261,6 +252,29 @@ const ServiceDetail = () => {
                   </div>
                 </CardContent>
               </Card>
+
+              {/* Gallery */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-2xl flex items-center">
+                    <ImageIcon className="w-6 h-6 mr-2 text-primary" />
+                    Galeria de Fotos
+                    </CardTitle>
+                  <CardDescription>
+                    Veja alguns dos nossos projetos e instalações realizadas
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+                    {/* Placeholder Images - Replace with your actual image paths */}
+                    <img src="https://via.placeholder.com/300x200" alt="Galeria de Fotos 1" className="rounded-lg shadow-md w-full h-auto object-cover" />
+                    <img src="https://via.placeholder.com/300x200" alt="Galeria de Fotos 2" className="rounded-lg shadow-md w-full h-auto object-cover" />
+                    <img src="https://via.placeholder.com/300x200" alt="Galeria de Fotos 3" className="rounded-lg shadow-md w-full h-auto object-cover" />
+                    {/* Add more images as needed */}
+                  </div>
+                </CardContent>
+              </Card>
+
             </div>
 
             {/* Sidebar */}

@@ -42,7 +42,7 @@ const Footer = () => {
             <div className="space-y-3 text-background/80">
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-2 text-primary" />
-                <span className="text-sm">(11) 9999-9999</span>
+                <span className="text-sm">(92) 99100-0125</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-2 text-primary" />
@@ -50,7 +50,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2 text-primary" />
-                <span className="text-sm">São Paulo, SP</span>
+                <span className="text-sm">Brasília-DF - Matriz<br />Manaus, AM - Filial</span>
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-background/20 mt-8 pt-8 text-center">
           <p className="text-background/60 text-sm">
-            © 2024 GR7 Tecnologia. Todos os direitos reservados.
+            © 2025 GR7 Tecnologia. Todos os direitos reservados.
           </p>
         </div>
       </div>

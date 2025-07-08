@@ -19,7 +19,7 @@ const Projects = () => {
       title: "Sistemas Desenvolvidos",
       description: "Desenvolvimento de sistemas personalizados para atender às necessidades específicas de cada cliente, com foco em usabilidade e performance.",
       features: ["Desenvolvimento web", "Aplicações mobile", "Integração APIs"],
-      technologies: ["React", "Node.js", "Python", "MySQL"],
+      technologies: ["React", "Node.js", "Firebase", "MySQL"],
       status: "Ativo",
       color: "bg-green-500"
     },
@@ -29,8 +29,8 @@ const Projects = () => {
       title: "Projeto Segurança Colaborativa",
       description: "Sistema inovador de segurança colaborativa que integra diferentes tecnologias para criar um ambiente seguro e conectado.",
       features: ["Monitoramento integrado", "Alertas em tempo real", "Gestão centralizada"],
-      technologies: ["IoT", "AI/ML", "Cloud", "Mobile"],
-      status: "Em Desenvolvimento",
+      technologies: ["Facial", "IA", "Hardware", "Software"],
+      status: "Implementado",
       color: "bg-blue-500"
     },
     {
@@ -39,8 +39,8 @@ const Projects = () => {
       title: "Catraca com Reconhecimento Facial",
       description: "Solução avançada para controle de acesso em escolas utilizando tecnologia de reconhecimento facial para maior segurança e praticidade.",
       features: ["Reconhecimento facial", "Controle de acesso", "Relatórios detalhados"],
-      technologies: ["Computer Vision", "Biometria", "Hardware", "Software"],
-      status: "Implementado",
+      technologies: ["Facial", "Controle de Acesso", "Hardware", "Software"],
+      status: "Em Desenvolvimento",
       color: "bg-purple-500"
     }
   ];
@@ -112,7 +112,7 @@ const Projects = () => {
                     {project.technologies.map((tech, idx) => (
                       <Badge 
                         key={idx} 
-                        variant="outline" 
+                        variant="outline"
                         className="text-xs border-primary/30 text-primary hover:bg-primary/10"
                       >
                         {tech}
@@ -120,8 +120,9 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-                
-                <Link to={`/projeto/${project.id}`}>
+
+                {/* Adicionado mb-6 à div que contém os badges de tecnologia */}
+                <Link to={`/projeto/${project.id}`} className="mt-6 block">
                   <Button 
                     variant="outline" 
                     className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"

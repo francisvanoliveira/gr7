@@ -64,7 +64,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 transition-all duration-300"
+              className="border-primary-foreground/30 text-[#101A35] hover:bg-transparent hover:text-white hover:border-white transition-all duration-300"
             >
               Ver Projetos
             </Button>

@@ -14,7 +14,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Telefone",
-      value: "(11) 9999-9999",
+      value: "(92) 99100-0125",
       description: "Atendimento comercial"
     },
     {
@@ -25,14 +25,20 @@ const Contact = () => {
     },
     {
       icon: MapPin,
-      title: "Localização",
-      value: "São Paulo, SP",
+      title: "Localização", // Corrected capitalization
+      value: (
+        <>
+          Brasília-DF - Matriz
+          <br /> {/* Added line break */}
+          Manaus, AM - Filial
+        </>
+      ),
       description: "Atendemos toda região metropolitana"
     },
     {
       icon: Clock,
       title: "Horário",
-      value: "Seg-Sex: 8h às 18h",
+      value: "Seg-Sex: 8h às 17h",
       description: "Suporte 24/7 disponível"
     }
   ];
@@ -112,7 +118,7 @@ const Contact = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="w-full lg:w-auto border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 ml-0 lg:ml-4"
+                  className="w-full lg:w-auto border-primary-foreground/30 text-[#101A35] hover:bg-transparent ml-0 lg:ml-4 hover:text-white hover:border-white"
                 >
                   WhatsApp
                   <MessageCircle className="ml-2 h-5 w-5" />

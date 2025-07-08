@@ -4,10 +4,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { 
-  ArrowLeft, 
-  Code, 
-  Users, 
+import {
+  ArrowLeft,
+  Code,
+  Users,
   ScanFace,
   CheckCircle,
   Calendar,
@@ -121,20 +121,14 @@ const ProjectDetail = () => {
   }
 
   const ProjectIcon = project.icon;
-  const statusColor = project.status.includes("desenvolvimento") ? "bg-blue-500" : 
+  const statusColor = project.status.includes("desenvolvimento") ? "bg-blue-500" :
                      project.status.includes("Implementado") ? "bg-green-500" : "bg-purple-500";
 
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      
-      {/* Breadcrumb */}
-      <div className="container mx-auto px-6 py-6">
-        <Link to="/" className="inline-flex items-center text-primary hover:text-primary-hover transition-colors">
-          <ArrowLeft className="h-4 w-4 mr-2" />
-          Voltar ao início
-        </Link>
-      </div>
+
+      {/* REMOVED: Breadcrumb section with back button */}
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero">
@@ -261,14 +255,37 @@ const ProjectDetail = () => {
                 <CardContent>
                   <div className="flex flex-wrap gap-3">
                     {project.technologies.map((tech, index) => (
-                      <Badge 
-                        key={index} 
-                        variant="outline" 
+                      <Badge
+                        key={index}
+                        variant="outline"
                         className="border-primary/30 text-primary hover:bg-primary/10 text-sm px-3 py-1"
                       >
                         {tech}
                       </Badge>
                     ))}
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Gallery Section - Add this section */}
+              <Card>
+                <CardHeader>
+                  {/* Replace with your chosen icon component */}
+                  {/* Ex: <ImageIcon className="h-6 w-6 mr-2 text-primary" /> */}
+                  <CardTitle className="text-2xl flex items-center">
+                     {/* Add your icon component here */}
+                     Galeria de Fotos
+                  </CardTitle>
+                  <CardDescription>
+                    Veja alguns dos nossos projetos e instalações realizadas
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    {/* Replace with your actual image paths */}
+                    <img src="placeholder-image-url-1.jpg" alt="Foto 1" className="rounded-lg shadow-md" />
+                    <img src="placeholder-image-url-2.jpg" alt="Foto 2" className="rounded-lg shadow-md" />
+                    <img src="placeholder-image-url-3.jpg" alt="Foto 3" className="rounded-lg shadow-md" />
                   </div>
                 </CardContent>
               </Card>
@@ -331,8 +348,8 @@ const ProjectDetail = () => {
                     .filter(([key]) => key !== projectId)
                     .slice(0, 2)
                     .map(([key, proj]) => (
-                      <Link 
-                        key={key} 
+                      <Link
+                        key={key}
                         to={`/projeto/${key}`}
                         className="block p-3 rounded-lg border border-border hover:border-primary/30 transition-colors"
                       >
