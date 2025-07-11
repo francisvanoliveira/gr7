@@ -14,7 +14,7 @@ const About: React.FC = () => {
               Conectando segurança, suporte e inovação desde 2012.
             </h3>
             <p className="text-gray-600 leading-relaxed text-lg"> {/* Estilo para o parágrafo */}
-              A GR7 Tecnologia é uma empresa de TI com 10+ anos de atuação dedicada a entregar suporte técnico, infraestrutura de redes (wired e wireless), CFTV, consultoria e criação de sites para empresas de pequeno, médio e grande porte. Com atendimento ágil — inclusive remoto, 24×7 — e foco na redução de custos, segurança proativa e monitoramento constante, a GR7 une qualidade, respeito e honestidade para promover a transformação digital dos negócios na região.
+            Com mais de 15 anos de experiência, a GR7 Tecnologia é referência em soluções de infraestrutura de rede, suporte técnico e sistemas de automação voltados ao setor hoteleiro e empresarial. Nosso compromisso é oferecer tecnologia de ponta com estabilidade, segurança e atendimento de excelência.
             </p>
           </div>
           {/* Coluna da Direita (Ilustração) */}

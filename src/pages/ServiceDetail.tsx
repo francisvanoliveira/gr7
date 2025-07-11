@@ -3,9 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navbar from "@/components/Navbar";
+import Clients from "@/components/Clients";
 import Footer from "@/components/Footer";
 import { 
   ArrowLeft, 
+  Footprints,
   Image as ImageIcon, // Renomeado para evitar conflito com a tag <img>
   Monitor, 
   Shield, 
@@ -338,6 +340,9 @@ const ServiceDetail = () => {
           </div>
         </div>
       </section>
+
+      <Clients />
+
       <Footer />
     </div>
   );
