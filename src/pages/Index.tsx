@@ -12,7 +12,7 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-hidden">
       <Navbar />
       <Hero />
       <About />
@@ -26,7 +26,7 @@ const Index = () => {
       <section id="clientes">
         <Clients />
       </section>
- <section id="parceiros">
+      <section id="parceiros">
         <Partners />
       </section>
       {/* Depoimentos Section */}

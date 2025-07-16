@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Monitor, Shield, Network } from "lucide-react";
+import type { Container, Engine } from "tsparticles-engine";
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim"; // Importe loadSlim
 
 const Hero = () => {
   return (
@@ -11,17 +14,72 @@ const Hero = () => {
         <div className="absolute bottom-1/4 left-1/3 w-16 h-16 border border-primary/20 rounded-full"></div>
       </div>
       
+      {/* tsParticles */}
+      <Particles
+        id="tsparticles"
+        className="absolute inset-0 z-0 w-full h-full" // Posiciona absolutamente, atrás do conteúdo e garante full width/height
+
+        options={{
+          fullScreen: {
+            enable: false //Impede que ocupe a tela inteira
+          },
+          background: {
+            color: {
+              value: "transparent", // Fundo transparente
+            },
+          },
+          fpsLimit: 120,
+          particles: {
+            color: {
+              value: "#cccccc", // Cor cinza claro das partículas
+            },
+            links: {
+              color: "#cccccc", // Cor cinza claro das linhas
+              distance: 150,
+              opacity: 0.3,
+              enable: true,
+              opacity: 0.4,
+              width: 1,
+            },
+            move: {
+              direction: "none",
+              enable: true, // Habilita o movimento das partículas
+              random: true, // Adiciona um pouco de aleatoriedade ao movimento
+              speed: 3,
+              straight: false,
+            },
+            number: {
+              density: {
+                enable: true, // Habilita a densidade para controlar a quantidade
+                area: 800,
+              },
+              value: 80,
+            },
+            opacity: {
+              value: 0.1, // Diminuído ainda mais para deixar as partículas mais fracas
+            },
+            shape: {
+              type: "circle", // Formato das partículas
+            },
+            size: { // Tamanho das partículas
+              value: { min: 1, max: 5 },
+            },
+          },
+          detectRetina: true,
+        }}
+        init={async (engine: Engine) => {
+          // Você pode carregar plugins aqui, se necessário:
+          await loadSlim(engine); // por exemplo para o bundle "slim"
+          // await loadBasic(engine); // ou para o bundle "basic"
+        }}
+        loaded={async (container: Container | undefined) => {
+          // Container loaded
+        }}
+      />
+
+      {/* Conteúdo Principal */}
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center">
-          {/* Logo */}
-          <div className="mb-8 animate-fade-in">
-            <img 
-              src="/lovable-uploads/8b3a65b0-1726-4017-bd86-0f4d45879701.png" 
-              alt="GR7 Tecnologia" 
-              className="mx-auto h-24 md:h-32 object-contain"
-            />
-          </div>
-          
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in">
             Soluções em

@@ -2,7 +2,7 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section className="py-20 bg-white"> {/* Adicionado padding e fundo branco */}
+    <section className="relative py-20 bg-white"> {/* Adicionado padding e fundo branco */}
       <div className="container mx-auto px-6"> {/* Container centralizado com padding horizontal */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"> {/* Layout de duas colunas responsivo com gap */}
           {/* Coluna da Esquerda (Texto) */}
@@ -19,10 +19,8 @@ const About: React.FC = () => {
           </div>
           {/* Coluna da Direita (Ilustração) */}
           <div className="flex justify-center md:justify-end"> {/* Alinha a ilustração à direita em telas maiores */}
-            {/* Placeholder para a ilustração - Substitua por sua imagem ou SVG real */}
-            <div className="w-64 h-64 bg-gray-200 rounded-full flex items-center justify-center text-gray-500"> {/* Placeholder visual */}
-              Ilustração Placeholder
-            </div>
+            {/* Substitua o src pelo caminho real da sua imagem */}
+            <img src="/img/site/suporte.png" alt="Ilustração" className="w-74 h-74 object-contain rounded-lg" /> {/* Exemplo com tamanho fixo e objeto cover */}
           </div>
         </div>
       </div>

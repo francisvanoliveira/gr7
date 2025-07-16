@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardContent } from "@/components/ui/card"; // Garantindo a importação de CardContent
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
+import Autoplay from 'embla-carousel-autoplay';
 // Dados de exemplo para os depoimentos
 const testimonials = [
   {
@@ -33,12 +34,18 @@ const Testimonials: React.FC = () => {
         </h2>
 
         <Carousel
+ plugins={[
+ Autoplay({
+ delay: 4000, // Tempo em milissegundos entre os slides (ex: 4 segundos)
+ stopOnInteraction: true, // Pausar ao interagir com o carrossel
+ }),
+ ]}
           opts={{
             align: "start",
             loop: true,
-          }}
-          className="w-full max-w-4xl mx-auto" // Centraliza e limita a largura
-        >
+ }}
+          className="w-full max-w-4xl mx-auto"
+ >
            <CarouselContent>
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index}>
