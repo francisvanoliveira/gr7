@@ -16,10 +16,11 @@ const Index = () => {
       <Navbar />
       <Hero />
       <About />
-      <section id="servicos">
-        <Services />
-      </section>
-      <section id="projetos">
+ <section id="servicos" className="py-20">
+ <div className="container mx-auto px-6 text-center">
+ <h2 className="text-3xl font-bold text-center text-foreground mb-12">Nossos Serviços</h2>
+ <Services /> {/* Use the Services component here */}
+ </div> </section>      <section id="projetos">
         <Projects />
       </section>
       {/* Nossos Clientes Section */}

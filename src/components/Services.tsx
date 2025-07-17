@@ -17,43 +17,43 @@ const Services = () => {
       id: "suporte-ti",
       icon: Monitor,
       title: "Suporte de T.I.",
-      description: "Suporte técnico especializado para manter seus sistemas funcionando perfeitamente. Atendimento rápido e eficiente para resolver qualquer problema tecnológico.",
+      description: "Atendimento técnico especializado para manter sistemas funcionando com eficiência e segurança, com foco em prevenção e agilidade.",
       features: ["Suporte remoto e presencial", "Manutenção preventiva", "Consultoria técnica"]
     },
     {
       id: "cftv",
       icon: Shield,
       title: "CFTV",
-      description: "Sistemas de circuito fechado de televisão para garantir a segurança do seu negócio com monitoramento 24h e gravação em alta definição.",
-      features: ["Câmeras HD/4K", "Monitoramento remoto", "Armazenamento em nuvem"]
+      description: "Dimensionamento, configuração e instalação de sistemas de monitoramento com câmeras de alta resolução e tecnologia moderna.",
+      features: ["Câmeras HD/4K", "Monitoramento remoto", "Instalação e configuração"]
     },
     {
       id: "infraestrutura",
       icon: Network,
       title: "Infraestrutura",
-      description: "Implementação completa de infraestrutura de TI, desde cabeamento estruturado até servidores e data centers empresariais.",
-      features: ["Cabeamento estruturado", "Servidores", "Data centers"]
+      description: "Projetos completos de infraestrutura de TI, com foco em organização, desempenho e segurança física e lógica.",
+      features: ["Cabeamento estruturado", "Data centers", "Organização de data center"]
     },
     {
       id: "rede-wifi",
       icon: Wifi,
       title: "Rede e WiFi",
-      description: "Soluções completas de conectividade para empresas. Redes cabeadas e wireless de alta performance e segurança.",
-      features: ["WiFi empresarial", "Redes cabeadas", "Segurança de rede"]
+      description: "Conectividade de alto desempenho para ambientes corporativos, com redes cabeadas e Wi-Fi seguras e bem planejadas.",
+      features: ["WiFi empresarial", "Segmentação de rede", "Segurança e desempenho"]
     },
     {
       id: "hoteis",
       icon: Building,
-      title: "Hotéis e Motéis",
+      title: "Hotéis",
       description: "Soluções tecnológicas específicas para o setor hoteleiro, incluindo sistemas de gestão, conectividade e segurança.",
-      features: ["Sistema de gestão", "Internet para hóspedes", "Segurança integrada"]
+      features: ["Sistema de gestão", "Wi-Fi para áreas internas", "Suporte técnico e rede"]
     },
     {
-      id: "suporte-especializado",
-      icon: HeadphonesIcon,
-      title: "Suporte Especializado",
-      description: "Atendimento técnico especializado com equipe qualificada para resolver demandas complexas de forma rápida e eficiente.",
-      features: ["Atendimento 24/7", "Equipe certificada", "SLA garantido"]
+      id: "gestao-moteis",
+      icon: Building,
+      title: "Gestao para Moteis",
+      description: "Sistemas integrados de gestão e automação para motéis, otimizando serviços, consumo e experiência do cliente.",
+      features: ["Controle de energia e som", "Equipe certificada", "Sistema de gestão completo"]
     }
   ];
 

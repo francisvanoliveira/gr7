@@ -65,13 +65,13 @@ const ServiceDetail = () => {
       title: "CFTV",
       transformSection: {
         title: "Transformando a Segurança com CFTV",
-        description: "Implementamos sistemas de CFTV de ponta para proteger seu patrimônio e garantir a segurança de seus colaboradores e clientes. Com monitoramento 24h e gravação de alta qualidade, você terá total tranquilidade.",
-        image: "/img/cftv/cftv_detail.jpg", // Replace with relevant image if available
+        description: "Realizamos o dimensionamento, configuração e instalação de sistemas de CFTV, utilizando câmeras de alta resolução e tecnologias modernas disponíveis no mercado. Garantimos uma infraestrutura segura e bem planejada, assegurando mais tranquilidade e proteção para sua empresa.",
+        image: "/img/cftv/CFTV_gr7.png", // Replace with relevant image if available
  },
       description:
  "Sistemas de circuito fechado de televisão para garantir a segurança do seu negócio com monitoramento 24h e gravação em alta definição.",
  longDescription:
- "Nossos sistemas de CFTV utilizam tecnologia de ponta para oferecer máxima segurança e tranquilidade. Com câmeras de alta resolução e armazenamento seguro, garantimos proteção completa para sua empresa.",
+ "Trabalhamos com câmeras de alta resolução e realizamos toda a instalação e configuração, garantindo proteção e tranquilidade para sua empresa.",
  features: [
  "Câmeras HD/4K com visão noturna",
  "Monitoramento remoto via app",
@@ -95,18 +95,20 @@ const ServiceDetail = () => {
       icon: Network,
       title: "Infraestrutura",
       transformSection: {
-        title: "Construindo a Base da Sua TI",
-        description: "Nossas soluções de infraestrutura de rede e data centers são a base para o crescimento e a eficiência da sua empresa. Projetamos e implementamos ambientes robustos e escaláveis.",
-        image: "/img/infraestrutura/infra_detail.jpg", // Replace with relevant image if available
+        title: "Fortalecendo a Base Tecnológica da sua Empresa",
+        description: "Desenvolvemos projetos completos de infraestrutura de TI, desde o cabeamento estruturado até a implantação de servidores e organização de datacenters. Planejamos e executamos soluções robustas, seguras e escaláveis, garantindo mais eficiência, estabilidade e suporte ao crescimento da sua operação.",
+        image: "/img/infra/Infra_gr7.png", // Replace with relevant image if available
  },
       description:
  "Implementação completa de infraestrutura de TI, desde cabeamento estruturado até servidores e data centers empresariais.",
+ longDescription:
+ "Cuidamos de toda a base tecnológica da sua empresa, desde o projeto até a implantação completa da infraestrutura. Realizamos cabeamento estruturado, instalação de servidores físicos e virtualizados, montagem de racks, organização de datacenters e mapeamento de ativos. Garantimos uma estrutura segura, escalável e pronta para suportar o crescimento do seu negócio.",
  features: ["Cabeamento estruturado certificado",
         "Servidores de alta performance",
-        "Data centers empresariais",
+        "Cabeamento estruturado",
         "Racks e gabinetes técnicos",
-        "Sistemas de energia (UPS/No-break)",
-        "Climatização de ambientes"
+        "Dimensionamento de equipamentos",
+        "Configurações"
       ],
       galleryDescription: "Projetos de infraestrutura que garantem sua operação:",
       galleryImages: [
@@ -119,25 +121,26 @@ const ServiceDetail = () => {
         "Maior confiabilidade",
         "Escalabilidade garantida"
       ],
-      pricing: "Sob consulta",
-      duration: "Projeto customizado"
+      pricing: "Solicite uma visita",
+      duration: "Contrato mensal ou por serviço"
     },
     "rede-wifi": {
       icon: Wifi,
       title: "Rede e WiFi",
       transformSection: {
-        title: "Conectividade Essencial para o Seu Negócio",
-        description: "Oferecemos soluções de rede e WiFi de alta performance e segurança para garantir que sua equipe e seus clientes estejam sempre conectados de forma rápida e confiável.",
-        image: "/img/rede_wifi/wifi_detail.jpg", // Replace with relevant image if available
+        title: "Conectividade Inteligente com Redes e Wi-Fi",
+        description: "Planejamos e implementamos soluções de rede cabeada e wireless com alto desempenho, garantindo estabilidade, velocidade e segurança para sua empresa. Nossa equipe realiza a segmentação, configuração e otimização da rede, assegurando uma conectividade eficiente e preparada para crescer com o seu negócio.",
+        image: "/img/rede/Rede_gr7.png", // Replace with relevant image if available
  },
       description:
  "Soluções completas de conectividade para empresas. Redes cabeadas e wireless de alta performance e segurança.",
  longDescription:
- "Implementamos redes corporativas de alta performance com cobertura total e segurança avançada, garantindo conectividade estável para todos os usuários.",
+ "Oferecemos soluções completas em redes cabeadas e Wi-Fi, com foco em velocidade, estabilidade e segurança. Realizamos o planejamento, instalação e segmentação da rede, garantindo uma estrutura otimizada para o tráfego de dados e preparada para os desafios do dia a dia corporativo.",
  features: [
  "WiFi empresarial de alta velocidade",
  "Redes cabeadas gigabit",
-        "Monitoramento de tráfego"
+        "Marketing Digital com Wifi",
+        "Venda de equipamentos"
       ],
       galleryDescription: "Redes WiFi e cabeadas para performance total:",
       galleryImages: [
@@ -150,21 +153,21 @@ const ServiceDetail = () => {
         "Controle total de acesso",
         "Performance otimizada"
       ],
-      pricing: "A partir de R$ 800/ponto",
-      duration: "Instalação em 1-2 dias"
+      pricing: "Solicite uma visita",
+      duration: "Instalação em 2-5 dias úteis ou de acordo com a complexidade"
     },
     "hoteis": {
       icon: Building,
-      title: "Hotéis e Motéis",
+      title: "Hotéis",
       transformSection: {
-        title: "Inovação Tecnológica para o Setor Hoteleiro",
-        description: "Soluções completas e personalizadas para hotéis e motéis, desde sistemas de gestão até automação de quartos e conectividade para hóspedes, elevando a experiência e a eficiência.",
-        image: "/img/hoteis/hoteis_detail.jpg", // Replace with relevant image if available
+        title: "Suporte de TI para Hotéis",
+        description: "Oferecemos suporte técnico completo, cabeamento estruturado e organização de redes Wi-Fi para hóspedes e áreas administrativas. Nossa equipe garante conectividade estável, segura e de alta performance, proporcionando mais eficiência para sua operação e uma melhor experiência para seus clientes.",
+        image: "/img/hotel/Hoteis_gr7.png", // Replace with relevant image if available
  },
       description:
  "Soluções tecnológicas específicas para o setor hoteleiro, incluindo sistemas de gestão, conectividade e segurança.",
  longDescription:
- "Oferecemos soluções completas e específicas para o setor hoteleiro, desde sistemas de gestão até conectividade para hóspedes e segurança integrada.",
+ "Oferecemos soluções completas em tecnologia para hotéis, com suporte técnico especializado, organização e gerenciamento de redes Wi-Fi para áreas administrativas e de hóspedes, cabeamento estruturado e manutenção da infraestrutura. Garantimos conectividade estável, segura e pronta para proporcionar a melhor experiência tanto para sua equipe quanto para seus clientes.",
  features: [
  "Sistema de gestão hoteleira (PMS)",
  "Internet de alta velocidade para hóspedes",
@@ -181,24 +184,24 @@ const ServiceDetail = () => {
         "Segurança completa",
         "Aumento da satisfação"
       ],
-      pricing: "A partir de R$ 2.500/quarto",
-      duration: "Implementação em 1-2 semanas"
+      pricing: "Solicite uma visita",
+      duration: "Contrato mensal ou serviço"
     },
-    "suporte-especializado": {
-      icon: HeadphonesIcon,
-      title: "Suporte Especializado",
-      transformSection: {
-        title: "Seu Parceiro em Suporte Técnico Especializado",
-        description: "Conte com nossa equipe de especialistas para resolver os desafios mais complexos da sua infraestrutura de TI. Suporte proativo e ágil para garantir a continuidade do seu negócio.",
-        image: "/img/suporte_especializado/suporte_esp_detail.jpg", // Replace with relevant image if available
+    "gestao-moteis": {
+      icon: Building,
+      title: "Gestão de Motéis",
+      transformSection: { // Mantido para o texto
+        title: "Automação Inteligente para Motéis",
+        description: "Oferecemos uma solução completa para gestão e automação de motéis, com recursos que controlam iluminação, climatização, som, energia e serviços de quarto. Com tecnologia de ponta e integração via aplicativo, o sistema otimiza processos, reduz custos e proporciona mais conforto e privacidade ao hóspede.",
+        image: "/img/moteis/Gestao_gr7.png", // Replace with relevant image if available
  },
       description:
  "Atendimento técnico especializado com equipe qualificada para resolver demandas complexas de forma rápida e eficiente.",
  longDescription:
- "Nossa equipe de especialistas está disponível 24/7 para atender demandas críticas e complexas, garantindo solução rápida e eficiente para sua empresa.",
+ "Oferecemos um sistema completo de gestão e automação para motéis, com controle total de energia, iluminação, som, climatização e serviços de quarto. Através de recursos como BI, aplicativo exclusivo, painéis inteligentes e automação dos apartamentos, otimizamos a operação, reduzimos custos e proporcionamos mais conforto e autonomia para o hóspede.",
  features: [
- "Atendimento 24/7 prioritário",
- "Equipe certificada e qualificada",
+ "Suporte especializado",
+ "Equipe qualificada",
         "Acompanhamento proativo"
       ],
       galleryDescription: "Casos de sucesso em suporte especializado:",
@@ -207,13 +210,12 @@ const ServiceDetail = () => {
         "/img/suporte_especializado/suporte_esp_galeria_02.jpg",
       ],
       benefits: [
-        "Resolução rápida de problemas",
+        "Resolução de problemas",
         "Expertise especializada",
-        "Disponibilidade total",
-        "Tranquilidade operacional"
+        "Gestão especializado em Moteis"
       ],
-      pricing: "A partir de R$ 599/mês",
-      duration: "Suporte contínuo"
+      pricing: "Solicite uma visita",
+      duration: "Contrato mensal"
     }
   };
 
@@ -270,7 +272,7 @@ const ServiceDetail = () => {
               {/* Description */}
               <Card>
                 <CardHeader>
- <CardTitle className="text-2xl">Sobre o Serviço</CardTitle>
+                  <CardTitle className="text-2xl">Sobre o Serviço</CardTitle>
                 </CardHeader>              <CardContent>
                   <p className="text-muted-foreground leading-relaxed text-lg">
                     {/* Garante que service.longDescription seja acessado */}
@@ -280,29 +282,31 @@ const ServiceDetail = () => {
               </Card>
 
               {/* GR7 Diferencial Section */}
- {service.transformSection && (
- <section className="py-12 bg-white rounded-lg shadow-md">
- <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
- {/* Coluna da Esquerda (Texto) */}
- <div className="space-y-4">
- <h3 className="text-3xl font-bold text-gray-800 leading-tight">
+              {service.transformSection && (
+              <section className="py-12 bg-white rounded-lg shadow-md">
+              <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+
+              {/* Coluna da Esquerda (Texto) */}
+              <div className="space-y-4"> {/* Mantido o espaço interno vertical */}
+              <h3 className="text-3xl font-bold text-gray-800 leading-tight">
  {service.transformSection.title}
- </h3>
- <p className="text-gray-600 leading-relaxed text-lg">
- {service.transformSection.description}
- </p>
- </div>
- {/* Coluna da Direita (Ilustração) */}
- <div className="flex justify-center md:justify-end">
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-lg">
+              {service.transformSection.description}
+              </p>
+
+              </div>
+              {/* Coluna da Direita (Ilustração) */}
+              <div className="flex justify-center md:justify">
  <img
- src={service.transformSection.image}
- alt="GR7 Diferencial"
- className="rounded-lg shadow-xl max-h-64 object-cover"
- />
- </div>
- </div>
- </section>
- )}
+              src={service.transformSection.image}
+              alt="GR7 Diferencial"
+              className="rounded-lg shadow-xl max-h-64 object-cover"
+              />
+              </div>
+              </div>
+              </section>
+              )}
 
 
  {/* Features */}
@@ -360,8 +364,9 @@ const ServiceDetail = () => {
  className="rounded-lg shadow-md w-full h-auto object-cover"
  />
  ))}                  </div>                </CardContent>              </Card>
-
+              
             </div>
+
 
             {/* Sidebar */}
             <div className="space-y-8">
