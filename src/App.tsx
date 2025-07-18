@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ServiceDetail from "./pages/ServiceDetail";
+import Contact from "./pages/Contact"; // Import the Contact component
 import ProjectDetail from "./pages/ProjectDetail";
 
 const queryClient = new QueryClient();
@@ -19,6 +20,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/servico/:serviceId" element={<ServiceDetail />} />
+          <Route path="/contact" element={<Contact />} /> {/* Add the new Contact route */}
           <Route path="/projeto/:projectId" element={<ProjectDetail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

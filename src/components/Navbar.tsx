@@ -23,8 +23,9 @@ const Navbar = () => {
     { name: "Início", href: "/" },
     { name: "Serviços", href: "/#servicos", isSectionLink: true },
     { name: "Projetos", href: "/#projetos", isSectionLink: true },
-    { name: "Contato", href: "/#contato", isSectionLink: true }
-  ];
+    { name: "Contato", href: "/contact" }
+ ];
+
 
    const serviceSubItems = [
       { name: "Suporte de T.I.", href: "/servico/suporte-ti" },
@@ -89,8 +90,8 @@ const Navbar = () => {
              {/* Mantido o layout original, usando botões e Links */}
             {navItems.map((item) => (
                // Usa Link para a página inicial e botões para scroll em outras seções
-              item.href === "/" ? (
-                  <Link
+              item.href === "/" || item.href === "/contact" ? (
+              <Link
                     key={item.name}
                      to={item.href}
                      className={`text-sm font-medium transition-colors hover:text-primary ${
@@ -155,7 +156,7 @@ const Navbar = () => {
               {/* Links principais no mobile */}
               {navItems.map((item) => (
                  item.href === "/" ? (
-                  <Link
+                 <Link
                     key={item.name}
                      to={item.href}
                      className={`block px-3 py-2 text-base font-medium transition-colors hover:text-primary w-full text-left ${
