@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom"; // Importe Link
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
   Mail, 
@@ -107,22 +108,30 @@ const Contact = () => {
               </p>
               
               <div className="space-y-4">
-                <Button 
-                  size="lg" 
-                  className="w-full lg:w-auto bg-primary hover:bg-primary-hover text-primary-foreground shadow-elegant transition-all duration-300 transform hover:scale-105"
+                <Link to="/contact">
+                  <Button 
+                    size="lg" 
+                    className="w-full lg:w-auto bg-primary hover:bg-primary-hover text-primary-foreground shadow-elegant transition-all duration-300 transform hover:scale-105"
+                  >
+                    Solicitar Orçamento
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+
+                <a 
+                  href="https://wa.me/5592991000125?text=Ol%C3%A1%2C%20quero%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20da%20GR7"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Solicitar Orçamento
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-                
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="w-full lg:w-auto border-primary-foreground/30 text-[#101A35] hover:bg-transparent ml-0 lg:ml-4 hover:text-white hover:border-white"
-                >
-                  WhatsApp
-                  <MessageCircle className="ml-2 h-5 w-5" />
-                </Button>
+                  <Button 
+                    variant="outline" 
+                    size="lg"
+                    className="w-full lg:w-auto border-primary-foreground/30 text-[#101A35] hover:bg-transparent ml-0 lg:ml-4 hover:text-white hover:border-white"
+                  >
+                    WhatsApp
+                    <MessageCircle className="ml-2 h-5 w-5" />
+                  </Button>
+                </a>             
               </div>
             </div>
           </div>

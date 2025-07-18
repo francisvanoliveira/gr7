@@ -28,12 +28,12 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-background mb-4">Serviços</h4>
             <ul className="space-y-2 text-background/80">
-              <li className="hover:text-primary transition-colors cursor-pointer">Suporte T.I.</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">CFTV</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Infraestrutura</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Redes e WiFi</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Hotéis</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Gestão para Moteis</li>
+              <li><a href="/servico/suporte-ti" className="hover:text-primary transition-colors cursor-pointer">Suporte T.I.</a></li>
+              <li><a href="/servico/cftv" className="hover:text-primary transition-colors cursor-pointer">CFTV</a></li>
+              <li><a href="/servico/infraestrutura" className="hover:text-primary transition-colors cursor-pointer">Infraestrutura</a></li>
+              <li><a href="/servico/rede-wifi" className="hover:text-primary transition-colors cursor-pointer">Redes e WiFi</a></li>
+              <li><a href="/servico/hoteis" className="hover:text-primary transition-colors cursor-pointer">Hotéis</a></li>
+              <li><a href="/servico/gestao-moteis" className="hover:text-primary transition-colors cursor-pointer">Gestão para Moteis</a></li>
             </ul>
           </div>
           

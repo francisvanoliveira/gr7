@@ -123,6 +123,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
+            <Link to="/contact">
             <Button
               onClick={() => scrollToSection("/#contato")}
               variant={isScrolled ? "default" : "outline"}
@@ -133,6 +134,8 @@ const Navbar = () => {
             >
               Orçamento
             </Button>
+            </Link>
+           
           </div>
 
           {/* Mobile menu button */}
