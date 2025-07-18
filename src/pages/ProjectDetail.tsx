@@ -26,9 +26,9 @@ const ProjectDetail = () => {
       icon: Code,
       title: "Sistemas Desenvolvidos",
       description: "Desenvolvimento de sistemas personalizados para atender às necessidades específicas de cada cliente, com foco em usabilidade e performance.",
-      longDescription: "Desenvolvemos soluções tecnológicas sob medida, utilizando as melhores práticas de desenvolvimento e tecnologias modernas. Cada sistema é criado pensando na experiência do usuário e na eficiência operacional do cliente.",
-      challenge: "Criar sistemas que sejam intuitivos, eficientes e escaláveis, atendendo às necessidades específicas de cada negócio.",
-      solution: "Metodologia ágil de desenvolvimento com foco em UX/UI moderno, arquitetura escalável e integração com sistemas existentes.",
+      longDescription: "Desenvolvemos soluções digitais sob demanda, incluindo sites institucionais e sistemas personalizados. Nossos projetos priorizam a usabilidade, a eficiência operacional e a integração com as necessidades reais de cada cliente — como sistemas internos de controle e plataformas especializadas para setores como suporte técnico e saúde.",
+      challenge: "Atender diferentes segmentos com soluções eficazes e flexíveis, criando desde sites institucionais até sistemas robustos.",
+      solution: "Utilizamos metodologias ágeis com foco em desenvolvimento eficiente, seguro e escalável. Nossas soluções são construídas para automatizar processos, integrar sistemas e atender com precisão às demandas operacionais de cada cliente.",
       results: [
         "Redução de 60% no tempo de processos manuais",
         "Aumento de 40% na produtividade das equipes",
@@ -39,10 +39,9 @@ const ProjectDetail = () => {
       features: [
         "Interface moderna e responsiva",
         "Desenvolvimento web full-stack",
-        "Aplicações mobile nativas",
         "Integração com APIs externas",
         "Dashboard administrativo",
-        "Relatórios em tempo real"
+        "Relatórios"
       ],
       timeline: "2-6 meses",
       status: "Múltiplos projetos ativos",
@@ -53,36 +52,35 @@ const ProjectDetail = () => {
       icon: Users,
       title: "Projeto Segurança Colaborativa",
       description: "Sistema inovador de segurança colaborativa que integra diferentes tecnologias para criar um ambiente seguro e conectado.",
-      longDescription: "Um projeto revolucionário que conecta múltiplos sistemas de segurança em uma rede colaborativa, permitindo monitoramento integrado e resposta rápida a incidentes em tempo real.",
-      challenge: "Integrar diferentes sistemas de segurança de múltiplas empresas em uma rede colaborativa eficiente.",
-      solution: "Plataforma unificada com IA para detecção de padrões, comunicação em tempo real entre centrais de segurança e protocolos automatizados de resposta.",
+      longDescription: "Uma solução inteligente de segurança colaborativa onde o morador tem acesso a uma câmera instalada na frente de sua residência e, por meio de um sistema exclusivo, pode visualizar também as imagens das demais câmeras da rede. Com modelo de comodato e assinatura mensal, o projeto já está ativo no Conjunto Nova República e em expansão para novos bairros.",
+      challenge: "Promover a segurança em áreas urbanas com baixo acesso à vigilância, criando uma rede acessível, colaborativa e de fácil adesão por meio de comodato e pagamento mensal.",
+      solution: "Sistema de monitoramento coletivo com câmeras instaladas nas residências, acesso remoto via plataforma integrada e visualização cruzada entre os participantes, fortalecendo a vigilância comunitária de forma contínua e inteligente.",
       results: [
-        "Redução de 70% no tempo de resposta a incidentes",
+        "Maior cobertura de monitoramento do bairro",
         "Aumento de 85% na eficiência de monitoramento",
-        "Cobertura de segurança 24/7 integrada",
+        "Cobertura de segurança 24/7",
         "Prevenção proativa de 90% dos incidentes"
       ],
-      technologies: ["IoT", "AI/ML", "Cloud Computing", "Mobile Apps", "WebRTC", "Blockchain"],
+      technologies: ["IoT", "Cloud Computing", "Mobile Apps", "IA"],
       features: [
-        "Monitoramento integrado multi-empresas",
-        "Alertas em tempo real com IA",
-        "Gestão centralizada de incidentes",
-        "Comunicação segura entre centrais",
+        "Monitoramento integrado multi-câmeras",
+        "Alertas em tempo real",
+        "Gestão centralizada",
         "Dashboard analítico avançado",
-        "Protocolos automatizados de resposta"
+        "Protocolos de resposta"
       ],
-      timeline: "12 meses",
-      status: "Em desenvolvimento",
-      clients: "Rede de 8 empresas",
+      timeline: "Recorrente",
+      status: "Implementado",
+      clients: "+30 Clientes",
       category: "Inovação"
     },
     "catraca-reconhecimento": {
       icon: ScanFace,
       title: "Catraca com Reconhecimento Facial",
       description: "Solução avançada para controle de acesso em escolas utilizando tecnologia de reconhecimento facial para maior segurança e praticidade.",
-      longDescription: "Sistema completo de controle de acesso escolar que utiliza biometria facial avançada para garantir segurança, praticidade e controle total de entrada e saída de alunos, funcionários e visitantes.",
-      challenge: "Criar um sistema de controle de acesso escolar que seja seguro, rápido e fácil de usar, garantindo a proteção dos estudantes.",
-      solution: "Integração de tecnologia de reconhecimento facial com catracas inteligentes, sistema de notificações para pais e relatórios detalhados para a administração escolar.",
+      longDescription: "Sistema de controle de acesso com reconhecimento facial, idealizado para escolas, que registra a entrada e saída dos alunos em tempo real. As informações são enviadas automaticamente para os pais por meio de um aplicativo, promovendo maior segurança, reduzindo a evasão escolar e fortalecendo o vínculo entre família e instituição.",
+      challenge: "Desenvolver uma solução escalável e adaptável, capaz de atender escolas em todo o Brasil e também outras instituições que demandam controle rigoroso de acesso, com foco em segurança, eficiência e integração com sistemas já existentes.",
+      solution: "Implantação de catracas inteligentes com reconhecimento facial, integração com aplicativo dos pais para envio de notificações e painel completo para a escola gerenciar acessos, gerar relatórios e aplicar os dados de forma estratégica. Adaptável a outros segmentos que exigem controle de entrada e saída.",
       results: [
         "100% de precisão no reconhecimento facial",
         "Redução de 95% no tempo de entrada/saída",
@@ -98,8 +96,8 @@ const ProjectDetail = () => {
         "Interface administrativa web",
         "Backup de dados seguro"
       ],
-      timeline: "4 meses",
-      status: "Implementado com sucesso",
+      timeline: "Recorrente",
+      status: "Em desenvolvimento",
       clients: "3 escolas piloto",
       category: "Segurança"
     }

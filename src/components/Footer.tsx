@@ -32,7 +32,8 @@ const Footer = () => {
               <li className="hover:text-primary transition-colors cursor-pointer">CFTV</li>
               <li className="hover:text-primary transition-colors cursor-pointer">Infraestrutura</li>
               <li className="hover:text-primary transition-colors cursor-pointer">Redes e WiFi</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Suporte Hotéis</li>
+              <li className="hover:text-primary transition-colors cursor-pointer">Hotéis</li>
+              <li className="hover:text-primary transition-colors cursor-pointer">Gestão para Moteis</li>
             </ul>
           </div>
           

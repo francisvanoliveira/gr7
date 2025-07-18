@@ -21,9 +21,9 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Início", href: "/" },
-    { name: "Serviços", href: "/#servicos", isSectionLink: true },
-    { name: "Projetos", href: "/#projetos", isSectionLink: true },
-    { name: "Contato", href: "/contact" }
+    { name: "Serviços", href: "/servicos", isSectionLink: true },
+    { name: "Projetos", href: "/projetos", isSectionLink: true },
+    { name: "Contato", href: "/contact" },
  ];
 
 
@@ -90,9 +90,8 @@ const Navbar = () => {
              {/* Mantido o layout original, usando botões e Links */}
             {navItems.map((item) => (
                // Usa Link para a página inicial e botões para scroll em outras seções
-              item.href === "/" || item.href === "/contact" ? (
-              <Link
-                    key={item.name}
+              item.href === "/" || item.href === "/contact" || item.href === "/servicos" || item.href === "/projetos"? (
+ <Link key={item.name}
                      to={item.href}
                      className={`text-sm font-medium transition-colors hover:text-primary ${
                        isActive(item.href)
@@ -155,15 +154,14 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 border-t border-border">
               {/* Links principais no mobile */}
               {navItems.map((item) => (
-                 item.href === "/" ? (
-                 <Link
-                    key={item.name}
+                 item.href === "/" || item.href === "/contact" || item.href === "/servicos" || item.href === "/projetos" ? ( 
+              <Link key={item.name}
                      to={item.href}
                      className={`block px-3 py-2 text-base font-medium transition-colors hover:text-primary w-full text-left ${
                        isActive(item.href)
                          ? "text-primary bg-primary/10"
                          : "text-muted-foreground hover:text-foreground"
-                     }`}
+                        }`}
                      onClick={() => setIsMenuOpen(false)} // Fecha o menu mobile ao clicar
                   >
                      {item.name}
