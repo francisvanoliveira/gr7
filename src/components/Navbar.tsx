@@ -77,11 +77,9 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src="/lovable-uploads/8b3a65b0-1726-4017-bd86-0f4d45879701.png"
+              src="/uploads/GR7.png"
               alt="GR7 Tecnologia"
-              className={`h-20 w-auto transition-all duration-300 ${
-                isScrolled ? "" : "brightness-0 invert"
-              }`}
+              className={`h-8 w-auto transition-all duration-300`}
             />
           </Link>
 

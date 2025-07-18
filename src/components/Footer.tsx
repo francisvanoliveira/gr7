@@ -8,9 +8,9 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <img 
-              src="/lovable-uploads/8b3a65b0-1726-4017-bd86-0f4d45879701.png" 
+              src="/uploads/GR7.png" 
               alt="GR7 Tecnologia" 
-              className="h-16 object-contain mb-4 brightness-0 invert"
+              className="h-12 object-contain mb-4"
             />
             <p className="text-background/80 mb-4 leading-relaxed">
               A GR7 Tecnologia é especializada em soluções completas de TI, 

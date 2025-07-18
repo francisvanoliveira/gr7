@@ -18,7 +18,7 @@ const Projects = () => {
       icon: Code,
       title: "Sistemas Desenvolvidos",
       description: "Desenvolvimento de sistemas personalizados para atender às necessidades específicas de cada cliente, com foco em usabilidade e performance.",
-      features: ["Desenvolvimento web", "Aplicações mobile", "Integração APIs"],
+      features: ["Desenvolvimento web", "Interface moderna e responsiva", "Integração APIs"],
       technologies: ["React", "Node.js", "Firebase", "MySQL"],
       status: "Ativo",
       color: "bg-green-500"
