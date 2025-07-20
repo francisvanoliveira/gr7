@@ -152,7 +152,8 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 border-t border-border">
+            {/* Adicionada a classe bg-white aqui para o fundo branco */}
+            <div className="px-2 pt-2 pb-3 space-y-1 border-t border-border bg-white"> {/* Adicionada bg-white */}
               {/* Links principais no mobile */}
               {navItems.map((item) => (
                  item.href === "/" || item.href === "/contact" || item.href === "/servicos" || item.href === "/projetos" ? ( 
@@ -162,7 +163,7 @@ const Navbar = () => {
                        isActive(item.href)
                          ? "text-primary bg-primary/10"
                          : "text-muted-foreground hover:text-foreground"
-                        }`}
+                     }`}
                      onClick={() => setIsMenuOpen(false)} // Fecha o menu mobile ao clicar
                   >
                      {item.name}
@@ -181,39 +182,6 @@ const Navbar = () => {
                   </button>
                  )
               ))}
-
-              {/* Links dos sub-itens no menu mobile */}
-              <div className="space-y-1 pl-4"> {/* Adiciona um pequeno recuo para os sub-itens */}
-                  {/* Sub-itens de Serviços */}
-                  <div className="pt-2">
-                      <span className="block px-3 py-2 text-sm font-semibold text-muted-foreground">Serviços</span> {/* Título para o grupo de sub-itens */}
-                      {serviceSubItems.map(item => (
-                          <Link
-                              key={item.name}
-                              to={item.href}
-                              className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground"
-                              onClick={() => setIsMenuOpen(false)} // Fecha o menu mobile ao clicar
-                          >
-                              {item.name}
-                          </Link>
-                      ))}
-                  </div>
-                   {/* Sub-itens de Projetos */}
-                   <div className="pt-2">
-                      <span className="block px-3 py-2 text-sm font-semibold text-muted-foreground">Projetos</span> {/* Título para o grupo de sub-itens */}
-                       {projectSubItems.map(item => (
-                          <Link
-                              key={item.name}
-                              to={item.href}
-                              className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground"
-                               onClick={() => setIsMenuOpen(false)} // Fecha o menu mobile ao clicar
-                          >
-                              {item.name}
-                          </Link>
-                       ))}
-                   </div>
-              </div>
-
               <div className="px-3 py-2">
                 <Button
                   onClick={() => scrollToSection("/#contato")}
