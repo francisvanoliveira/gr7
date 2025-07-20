@@ -123,7 +123,6 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Link to="/contact">
             <Button
-              onClick={() => scrollToSection("/#contato")}
               variant={isScrolled ? "default" : "outline"}
               className={isScrolled
                 ? "bg-primary hover:bg-primary-hover"
@@ -182,14 +181,7 @@ const Navbar = () => {
                   </button>
                  )
               ))}
-              <div className="px-3 py-2">
-                <Button
-                  onClick={() => scrollToSection("/#contato")}
-                  className="w-full bg-primary hover:bg-primary-hover"
-                >
-                  Orçamento
-                </Button>
-              </div>
+              
             </div>
           </div>
         )}

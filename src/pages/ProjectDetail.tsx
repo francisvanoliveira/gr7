@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Helmet } from 'react-helmet-async';
 import {
   ArrowLeft,
   Code,
@@ -124,6 +125,9 @@ const ProjectDetail = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+          <title>GR7 Tecnologia - {project.title}</title> {/* Título para serviço não encontrado */}
+      </Helmet>
       <Navbar />
 
       {/* REMOVED: Breadcrumb section with back button */}
@@ -327,12 +331,24 @@ const ProjectDetail = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <Button className="w-full" size="lg">
-                    Solicitar Proposta
-                  </Button>
-                  <Button variant="outline" className="w-full">
-                    Falar no WhatsApp
-                  </Button>
+                  <div>
+                    <Link to="/contact">
+                      <Button className="w-full" size="lg">
+                        Solicitar Orçamento
+                      </Button>
+                    </Link>
+                  </div>
+                  <div>
+                    <a
+                    href="https://wa.me/5592991000125?text=Ol%C3%A1%2C%20quero%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20da%20GR7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                      <Button variant="outline" className="w-full">
+                        Falar no WhatsApp
+                      </Button>
+                    </a>
+                  </div>
                 </CardContent>
               </Card>
 

@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, MessageSquare, CheckCircle, AlertCircle } from "lucide-react";
+import { Helmet } from 'react-helmet-async'; // Importe Helmet
 
 interface FormData {
   nome: string;
@@ -147,6 +148,9 @@ const Contact: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+          <title>GR7 Tecnologia - Contato</title> {/* Título para serviço não encontrado */}
+        </Helmet>
       <Navbar />
 
       {/* Hero Section */}

@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import Navbar from "@/components/Navbar";
 import Clients from "@/components/Clients";
 import Footer from "@/components/Footer";
+import { Helmet } from 'react-helmet-async';
 import { 
   ArrowLeft, 
   Footprints,
@@ -238,6 +239,9 @@ const ServiceDetail = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+          <title>GR7 Tecnologia - {service.title}</title> {/* Título para serviço não encontrado */}
+      </Helmet>
       <Navbar />
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-6 text-center">
@@ -387,12 +391,26 @@ const ServiceDetail = () => {
                       {service.duration}
                     </p>
                   </div>
-                  <Button className="w-full" size="lg">
-                    Solicitar Orçamento
-                  </Button>
-                  <Button variant="outline" className="w-full">
-                    Falar no WhatsApp
-                  </Button>
+                  {/* Envolver o Link em uma div */}
+                  <div>
+                    <Link to="/contact">
+                      <Button className="w-full" size="lg">
+                        Solicitar Orçamento
+                      </Button>
+                    </Link>
+                  </div>
+                  {/* Envolver o <a> em uma div */}
+                  <div>
+                    <a
+                    href="https://wa.me/5592991000125?text=Ol%C3%A1%2C%20quero%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20da%20GR7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                      <Button variant="outline" className="w-full">
+                        Falar no WhatsApp
+                      </Button>
+                    </a>
+                  </div>
                 </CardContent>
               </Card>
 

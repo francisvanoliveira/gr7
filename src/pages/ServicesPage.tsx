@@ -3,10 +3,14 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ServicesSection from "@/components/ServicesSection"; // Assuming this path
 import { Settings } from "lucide-react"; // Import a relevant icon
+import { Helmet } from 'react-helmet-async';
 
 const ServicesPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+          <title>GR7 Tecnologia - Serviço</title> {/* Título para serviço não encontrado */}
+        </Helmet>
       <Navbar />
 
       {/* Hero Section */}
