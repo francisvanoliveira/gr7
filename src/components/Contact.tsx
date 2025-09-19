@@ -29,9 +29,7 @@ const Contact = () => {
       title: "Localização", // Corrected capitalization
       value: (
         <>
-          Brasília-DF - Matriz
-          <br /> {/* Added line break */}
-          Manaus, AM - Filial
+          Manaus, AM
         </>
       ),
       description: "Atendemos toda região metropolitana"
