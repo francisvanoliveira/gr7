@@ -51,7 +51,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2 text-primary" />
-                <span className="text-sm">Brasília-DF - Matriz<br />Manaus, AM - Filial</span>
+                <span className="text-sm">Rua Belo Horizonte, 240-A, Sala 123, DaVinci Hotel - Adrianópolis <br/>Manaus - AM, 69057-060</span>
               </div>
             </div>
           </div>
