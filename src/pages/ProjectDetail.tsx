@@ -1,3 +1,4 @@
+
 import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -126,7 +127,9 @@ const ProjectDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-          <title>GR7 Tecnologia - {project.title}</title> {/* Título para serviço não encontrado */}
+        <title>GR7 Tecnologia - {project.title}</title>
+        <meta name="description" content={project.description} />
+        <link rel="canonical" href={`https://gr7tecnologia.com.br/projeto/${projectId}`} />
       </Helmet>
       <Navbar />
 

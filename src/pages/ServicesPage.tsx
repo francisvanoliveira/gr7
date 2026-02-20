@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,8 +10,10 @@ const ServicesPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-          <title>GR7 Tecnologia - Serviço</title> {/* Título para serviço não encontrado */}
-        </Helmet>
+        <title>Serviços de TI e Infraestrutura | GR7 Tecnologia em Manaus</title>
+        <meta name="description" content="Oferecemos um portfólio completo de serviços de TI em Manaus, incluindo suporte técnico, infraestrutura de redes, CFTV e soluções de internet empresarial com Starlink. Otimize sua tecnologia conosco." />
+        <link rel="canonical" href="https://gr7tecnologia.com.br/servicos" />
+      </Helmet>
       <Navbar />
 
       {/* Hero Section */}

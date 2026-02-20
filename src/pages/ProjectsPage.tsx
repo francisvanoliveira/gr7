@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,8 +10,10 @@ const ProjectsPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-          <title>GR7 Tecnologia - Projetos</title> {/* Título para serviço não encontrado */}
-        </Helmet>
+        <title>Projetos de TI e Redes | Portfólio GR7 Tecnologia</title>
+        <meta name="description" content="Explore nosso portfólio de projetos de TI, infraestrutura de redes, CFTV e automação em Manaus. Veja como a GR7 Tecnologia entrega soluções robustas e inovadoras." />
+        <link rel="canonical" href="https://gr7tecnologia.com.br/projetos" />
+      </Helmet>
       <Navbar />
 
       {/* Hero Section */}

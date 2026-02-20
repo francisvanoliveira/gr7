@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -149,8 +150,10 @@ const Contact: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-          <title>GR7 Tecnologia - Contato</title> {/* Título para serviço não encontrado */}
-        </Helmet>
+        <title>Contato | GR7 Tecnologia | Fale com Especialistas em TI</title>
+        <meta name="description" content="Entre em contato com a GR7 Tecnologia em Manaus. Solicite um orçamento para suporte de TI, redes, CFTV e mais. Estamos prontos para atender sua empresa." />
+        <link rel="canonical" href="https://gr7tecnologia.com.br/contato" />
+      </Helmet>
       <Navbar />
 
       {/* Hero Section */}

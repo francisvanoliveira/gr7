@@ -1,3 +1,4 @@
+
 import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -313,8 +314,9 @@ const ServiceDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-          <title>GR7 Tecnologia - {service.title}</title>
+          <title>{service.title} | GR7 Tecnologia</title>
           <meta name="description" content={service.description} />
+          <link rel="canonical" href={`https://gr7tecnologia.com.br/servico/${serviceId}`} />
       </Helmet>
       <Navbar />
       <section className="py-20 bg-gradient-hero">
@@ -450,7 +452,7 @@ const ServiceDetail = () => {
                     </Button>
                   </Link>
                   <a
-                    href="https://wa.me/5592991000125?text=Ol%C3%A1%2C%20quero%20informa%C3%A7%C3%B5es%20sobre%20o%20servi%C3%A7o%20de%20${service.title}"
+                    href={`https://wa.me/5592991000125?text=Ol%C3%A1%2C%20quero%20informa%C3%A7%C3%B5es%20sobre%20o%20servi%C3%A7o%20de%20${service.title}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

@@ -1,36 +1,40 @@
+
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import { Card, CardContent } from "@/components/ui/card"; // Import Card and CardContent
-import ServicesSection from "@/components/ServicesSection"; // Import the new ServicesSection component
+import ServicesSection from "@/components/ServicesSection";
 import About from "@/components/About";
-import ProjectsSection from "@/components/ProjectsSection"; // Import the new ProjectsSection component
+import ProjectsSection from "@/components/ProjectsSection";
 import Clients from "@/components/Clients";
 import Partners from "@/components/Partners";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { Helmet } from 'react-helmet-async'; // Importe o componente Helmet
+import { Helmet } from 'react-helmet-async';
+import StarlinkBanner from "@/components/StarlinkBanner"; // Importa o novo banner
 
 const Index = () => {
   return (
     <div className="min-h-screen overflow-hidden">
-      <Helmet> {/* Use o componente Helmet para definir o título da aba */}
-        <title>GR7 Tecnologia - Início</title> {/* Defina o título específico para a página inicial */}
+      <Helmet>
+        <title>GR7 Tecnologia | Soluções em TI, Redes e Segurança em Manaus</title>
+        <meta name="description" content="Especialistas em suporte de TI, infraestrutura de redes, CFTV, e internet empresarial com Starlink em Manaus. Transformamos a tecnologia da sua empresa com soluções personalizadas." />
+        <link rel="canonical" href="https://gr7tecnologia.com.br/" />
       </Helmet>
       <Navbar />
       <Hero />
       <About />
-      <ServicesSection /> {/* Use the ServicesSection component here */}
+      <StarlinkBanner /> {/* Adiciona o banner da Starlink */}
+      <ServicesSection />
       <ProjectsSection />
 
-      {/* Nossos Clientes Section */}
+      {/* Seção de Clientes */}
       <section id="clientes">
         <Clients />
       </section>
       <section id="parceiros">
         <Partners />
       </section>
-      {/* Depoimentos Section */}
+      {/* Seção de Depoimentos */}
       <section id="depoimentos">
         <Testimonials />
       </section>
